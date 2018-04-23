@@ -1,0 +1,21 @@
+﻿<Window x:Class="FieldsExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxre="http://schemas.devexpress.com/winfx/2008/xaml/richedit"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <dxre:RichEditControl Name="richEditControl1" />
+        <StackPanel Grid.Column="1">
+            <Button Name="btnAddField" Content="Add field" Margin="5" Click="btnAddField_Click" />
+            <Button Name="btnUpdateField" Content="Update field" Margin="5" Click="btnUpdateField_Click" />
+            <Button Name="btnShowFieldCode" Content="Show Field Code" Margin="5" Click="btnShowFieldCode_Click" />
+            <Button Name="btnShowFieldResult" Content="Show Field Result" Margin="5" Click="btnShowFieldResult_Click" />
+            <Button Name="btnModifyFieldCode" Content="Modify Field Code" Margin="5" Click="btnModifyFieldCode_Click" />
+            <Button Name="btnCreateFieldFromSelection" Content="Create field from selection" Margin="5" Click="btnCreateFieldFromSelection_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
